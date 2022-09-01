@@ -8,27 +8,23 @@ driver = webdriver.Chrome(path_chd)
 driver.maximize_window()
 
 driver.get("https://www.clima.com")
-time.sleep(3)
 
 driver.find_element(By.XPATH, "//a[contains(@href, \'https://www.clima.com/mexico\')]").click()
-time.sleep(3)
+time.sleep(2)
 
 driver.find_element(By.XPATH, "//input[@id=\'term\']").send_keys("Queretaro")
-time.sleep(3)
+time.sleep(2)
 
-driver.find_element_by_xpath("//span[contains(text(),'Santa Rosa de Jáuregui, Estado de Querétaro de Art')]").click()
-time.sleep(3)
+driver.find_element(By.XPATH, "//*[@id=\"search\"]/ul//span[contains(text(),'Querétaro, Estado de Querétaro de Arteaga')]").click()
+time.sleep(2)
 
 driver.find_element(By.XPATH, "//a[contains(text(),\'Por horas\')]").click()
-time.sleep(3)
+time.sleep(2)
 
 driver.find_element(By.XPATH, "//a[contains(text(),\'Días\')]").click()
-time.sleep(3)
+time.sleep(2)
 
 driver.find_element(By.XPATH, "//a[contains(text(),\'Fin de semana\')]").click()
-time.sleep(3)
-
-
-driver.find_element(By.XPATH, "//a[contains(text(),\'Más info\')]").click()
+time.sleep(2)
 
 print ("Done")
