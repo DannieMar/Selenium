@@ -5,7 +5,10 @@ import time
 
 path_chd = "/Users/danniemarom/Dropbox/JDMR/UAQ/Ingeniera de Software/7MO SEM/PYA Calidad del Software/Selenium/chromedriver"
 driver = webdriver.Chrome(path_chd)
+driver.maximize_window()
+
 driver.get("https://www.clima.com")
+time.sleep(3)
 
 driver.find_element(By.XPATH, "//a[contains(@href, \'https://www.clima.com/mexico\')]").click()
 time.sleep(3)
@@ -28,4 +31,4 @@ time.sleep(3)
 
 driver.find_element(By.XPATH, "//a[contains(text(),\'Más info\')]").click()
 
-print ("Informacion lista!")
+print ("Done")
