@@ -4,8 +4,6 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.common.alert import Alert 
 import time
 
-# import Action chains
-from selenium.webdriver.common.action_chains import ActionChains
 
 path_chd = "/Users/danniemarom/Dropbox/JDMR/UAQ/Ingeniera de Software/7MO SEM/PYA Calidad del Software/Selenium/chromedriver"
 driver = webdriver.Chrome(path_chd)
